@@ -5,6 +5,9 @@ Descripción:
 Se desea realizar una app que sea un calendario, bloc de notas y drive.
 La parte principal son los hashtags ( # ), con los cuales los pondremos en todas partes; por ejemplo, para cumpleaños de familiares pondremos: #Cumple, #Familia, etc.
 
+Figma 
+- https://www.figma.com/file/7CTLYHqcbmpLfd8xzwyQkN/Proyecto?type=design&node-id=54296%3A66&mode=design&t=F2DqhHywAQTatt9d-1
+
 Modelo de datos
  - CalendarView (CalendarView.OnDateChangeListener)
 
