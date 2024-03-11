@@ -21,5 +21,6 @@ Recomendaciones de Profes
 - Notion
 
 Actividad 
+
 11/03 -> Cree el Modelo de datos y lo subi a github
 11/03 -> Empece el figma
