@@ -1,6 +1,5 @@
-# Proyecto
+# DailyNote
 Duración -> 11/03/2024 -> 05/04/2024
-Titulo -> DailyNote
 
 Descripcion :
 Se desea realizar una app que es un calendario, block de notas, drive.
