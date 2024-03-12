@@ -25,9 +25,9 @@ Saldrán los eventos de hoy y luego las notas que se hayan introducido hoy. Al f
 - Creación de notas ->
 Será como mandar un email, te pedirá hashtag, título, contenido, evento y se añadirá la fecha de creación.
 - Calendario ->
-- Tendra un calendario interactivo y debajo saldra los eventos y notas del día selecionado por el calendario 
+Tendra un calendario interactivo y debajo saldra los eventos y notas del día selecionado por el calendario 
 - Buscador ->
-- Tendra un buscador y la opcion de filtro de busqueda
+Tendra un buscador y la opcion de filtro de busqueda
 
 
 Recomendaciones de Profes
