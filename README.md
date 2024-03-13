@@ -49,6 +49,9 @@ Actividad
 - 13/03 -> En la página de búsqueda, de forma, le puse una lista.
 - 13/03 -> Creé otra página con un ejemplo de una lista ya terminada.
 - 13/03 -> Le puse la opción de editar y conecté la página con la lista de búsqueda.
+- 13/03 -> Clone el repositorio a escritorio
+- 13/03 -> Cree carpeta para anteproyecto y meti todo sobre el
+- 13/03 -> Añadi otra carpeta para las fotos del anteproyecto
 
 
 
