@@ -46,6 +46,11 @@ Actividad
 - 12/03 -> Actualize la imagen de Modelo-Datos
 - 12/03 -> Cree un documento de calc con ejemplos del modelo relacional con como minimo 3 ejemplos cada
 - 12/03 -> Subi al github una imagen del documento calc como Modelo-Relacional-Ejemplo
+- 13/03 -> En la página de búsqueda, de forma, le puse una lista.
+- 13/03 -> Creé otra página con un ejemplo de una lista ya terminada.
+- 13/03 -> Le puse la opción de editar y conecté la página con la lista de búsqueda.
+
+
 
 
 
