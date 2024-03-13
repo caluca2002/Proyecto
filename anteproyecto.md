@@ -10,10 +10,12 @@
 4. Acceso simple a notas con ayuda de hastag o fechas
 
 ### Temática
-1. Simple con colores sueves
+1. App simple con colores suaves
+2. Acceso rapido a zonas de apuntes
+3. Modificacciones sencilas a las notas
 
 
- 
+ ### Elementos
  - Modelo de datos
    
 ![Modelo-Datos](https://github.com/caluca2002/Proyecto/assets/95358127/44d55c70-f1ef-429d-8ac0-4df9548907e2)
