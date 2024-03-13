@@ -24,11 +24,14 @@
  - Ejemplo del modelo de datos
    
 [Modelo-Ejemplo.ods](https://github.com/caluca2002/Proyecto/files/14586966/Modelo-Ejemplo.ods)
+
 ![Modelo-Ejemplo](https://github.com/caluca2002/Proyecto/assets/95358127/a3c8db1d-da2d-4dc9-80b9-38f1671db951)
 
 
  - Figma
 
-https://www.figma.com/file/7CTLYHqcbmpLfd8xzwyQkN/Proyecto?type=design&node-id=54296%3A66&mode=design&t=2HVmYd0dhJg8oSmt-1   
+https://www.figma.com/file/7CTLYHqcbmpLfd8xzwyQkN/Proyecto?type=design&node-id=54296%3A66&mode=design&t=2HVmYd0dhJg8oSmt-1  
+
 [Proyecto.pdf](https://github.com/caluca2002/Proyecto/files/14587011/Proyecto.pdf)
+
 ![Figma-Foto](https://github.com/caluca2002/Proyecto/assets/95358127/420b8732-9370-451b-a7d1-7c18423c5381)
