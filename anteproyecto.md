@@ -11,7 +11,7 @@
 
 ### Temática
 1. App simple con colores suaves
-2. Acceso rapido a zonas de apuntes
+2. Acceso rápido a zonas de apuntes
 3. Modificacciones sencilas a las notas
 
 
@@ -28,7 +28,7 @@
 ![Modelo-Ejemplo](https://github.com/caluca2002/Proyecto/assets/95358127/a3c8db1d-da2d-4dc9-80b9-38f1671db951)
 
 
- - Figma
+ - Figma ( mockup )
 
 https://www.figma.com/file/7CTLYHqcbmpLfd8xzwyQkN/Proyecto?type=design&node-id=54296%3A66&mode=design&t=2HVmYd0dhJg8oSmt-1  
 
