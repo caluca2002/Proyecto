@@ -33,6 +33,9 @@ Tendra un buscador y la opcion de filtro de busqueda
 Recomendaciones de Profes
 - Notion (Plantillas)
 - Página profe ( https://github.com/hariainformatica/proyecto2324 )
+- ApiRest ( Para pedir datos al servidor )
+- RetroFit ( Rest - HTTP:Get, Post, Put )
+- Room para guardar la app en local
 
 
 Actividad
@@ -52,6 +55,11 @@ Actividad
 - 13/03 -> Clone el repositorio a escritorio
 - 13/03 -> Cree carpeta para anteproyecto y meti todo sobre el
 - 13/03 -> Añadi otra carpeta para las fotos del anteproyecto
+- 14/03 - 15/03 -> En casa intento arreglar el adroid estudio poruqe la virtualizacion no funciona
+- 18/03 -> Empiezo el BottomAppBar de la aplicacion tube problemas pero se pudo arreglar
+- 19/03 -> Probe desintalando e instalando el adroid y no funciona la virtualizacion
+- 20/03 -> Cree las paguinas en vacio con NavControler y los conecte con el BottomAppBar entre ellas
+- 20/03 -> Borre todo lo que hice despues del NavHost al hacer comit 
 
 
 
