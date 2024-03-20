@@ -22,8 +22,12 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.DateRange
+import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Menu
+import androidx.compose.material.icons.filled.Search
+import androidx.compose.material3.BottomAppBar
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.CenterAlignedTopAppBar
@@ -36,6 +40,7 @@ import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
+import androidx.compose.material3.BottomAppBarDefaults
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -44,6 +49,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
@@ -102,6 +108,11 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////  Inicio  ////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun Inicio(
@@ -110,66 +121,61 @@ fun Inicio(
     onNavigateToBusqueda: () -> Unit,
     onNavigateToCreateNota: () -> Unit
 ) {
-    Column {
-        Row {
-            Text(text = "Pagina Inicio")
-        }
-        Row {
-            Text(text = "Ir a Inicio")
-            IconButton(
-                onClick = onNavigateToInicio ,
-                modifier = Modifier
-                    .background(
-                        Color.Blue,
-                        CircleShape
-                    )
+    Scaffold(
+        bottomBar = {
+            BottomAppBar(
+                containerColor  = MaterialTheme.colorScheme.secondary
             ) {
-                Icons.Default.DateRange
+                IconButton(
+                    onClick = onNavigateToBusqueda,
+                    modifier = Modifier
+                        .padding(8.dp)
+                        .clip(CircleShape)
+                        .background(Color.Blue)
+                        .weight(1f)
+                ) {
+                    Icon(Icons.Default.Search, contentDescription = null)
+                }
+                IconButton(
+                    onClick = onNavigateToCreateNota,
+                    modifier = Modifier
+                        .padding(8.dp)
+                        .clip(CircleShape)
+                        .background(Color.Blue)
+                        .weight(1f)
+                ) {
+                    Icon(Icons.Default.Add, contentDescription = null)
+                }
+                IconButton(
+                    onClick = onNavigateToCalendario,
+                    modifier = Modifier
+                        .padding(8.dp)
+                        .clip(CircleShape)
+                        .background(Color.Blue)
+                        .weight(1f)
+                ) {
+                    Icon(Icons.Default.DateRange, contentDescription = null)
+                }
+            }
+        },
+        content = { innerPadding ->
+            Column(
+                modifier = Modifier.padding(innerPadding),
+                verticalArrangement = Arrangement.spacedBy(8.dp)
+            ) {
+                Row {
+                    Text(text = "Inicio")
+                }
             }
         }
-        Row {
-            Text(text = "Ir a calendario")
-            IconButton(
-                onClick = onNavigateToCalendario ,
-                modifier = Modifier
-                    .background(
-                        Color.Blue,
-                        CircleShape
-                    )
-            ) {
-                Icons.Default.DateRange
-            }
-        }
-        Row {
-            Text(text = "Ir a Busqueda")
-            IconButton(
-                onClick = onNavigateToBusqueda ,
-                modifier = Modifier
-                    .background(
-                        Color.Blue,
-                        CircleShape
-                    )
-            ) {
-                Icons.Default.DateRange
-            }
-        }
-        Row {
-            Text(text = "Ir a CreateNota")
-            IconButton(
-                onClick = onNavigateToCreateNota ,
-                modifier = Modifier
-                    .background(
-                        Color.Blue,
-                        CircleShape
-                    )
-            ) {
-                Icons.Default.DateRange
-            }
-        }
-    }
+    )
+
 }
 
-@OptIn(ExperimentalMaterial3Api::class)
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////  Calendario  ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 @Composable
 fun Calendario(
     onNavigateToInicio: () -> Unit,
@@ -177,66 +183,50 @@ fun Calendario(
     onNavigateToBusqueda: () -> Unit,
     onNavigateToCreateNota: () -> Unit
 ) {
-    Column {
-        Row {
-            Text(text = "Pagina Calendario")
-        }
-        Row {
-            Text(text = "Ir a Inicio")
-            IconButton(
-                onClick = onNavigateToInicio ,
-                modifier = Modifier
-                    .background(
-                        Color.Blue,
-                        CircleShape
-                    )
+    Scaffold(
+        bottomBar = {
+            BottomAppBar(
+                containerColor  = MaterialTheme.colorScheme.secondary
             ) {
-                Icons.Default.DateRange
+                IconButton(
+                    onClick = onNavigateToBusqueda,
+                    modifier = Modifier
+                        .padding(8.dp)
+                        .clip(CircleShape)
+                        .background(Color.Blue)
+                        .weight(1f)
+                ) {
+                    Icon(Icons.Default.Search, contentDescription = null)
+                }
+                IconButton(
+                    onClick = onNavigateToInicio,
+                    modifier = Modifier
+                        .padding(8.dp)
+                        .clip(CircleShape)
+                        .background(Color.Blue)
+                        .weight(1f)
+                ) {
+                    Icon(Icons.Default.Home, contentDescription = null)
+                }
+            }
+        },
+        content = { innerPadding ->
+            Column(
+                modifier = Modifier.padding(innerPadding),
+                verticalArrangement = Arrangement.spacedBy(8.dp)
+            ) {
+                Row {
+                    Text(text = "Calendario")
+                }
             }
         }
-        Row {
-            Text(text = "Ir a calendario")
-            IconButton(
-                onClick = onNavigateToCalendario ,
-                modifier = Modifier
-                    .background(
-                        Color.Blue,
-                        CircleShape
-                    )
-            ) {
-                Icons.Default.DateRange
-            }
-        }
-        Row {
-            Text(text = "Ir a Busqueda")
-            IconButton(
-                onClick = onNavigateToBusqueda ,
-                modifier = Modifier
-                    .background(
-                        Color.Blue,
-                        CircleShape
-                    )
-            ) {
-                Icons.Default.DateRange
-            }
-        }
-        Row {
-            Text(text = "Ir a CreateNota")
-            IconButton(
-                onClick = onNavigateToCreateNota ,
-                modifier = Modifier
-                    .background(
-                        Color.Blue,
-                        CircleShape
-                    )
-            ) {
-                Icons.Default.DateRange
-            }
-        }
-    }
+    )
 }
 
-@OptIn(ExperimentalMaterial3Api::class)
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////  Busqueda  /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 @Composable
 fun Busqueda(
     onNavigateToInicio: () -> Unit,
@@ -244,64 +234,59 @@ fun Busqueda(
     onNavigateToBusqueda: () -> Unit,
     onNavigateToCreateNota: () -> Unit
 ) {
-    Column {
-        Row {
-            Text(text = "Pagina Busqueda")
-        }
-        Row {
-            Text(text = "Ir a Inicio")
-            IconButton(
-                onClick = onNavigateToInicio ,
-                modifier = Modifier
-                    .background(
-                        Color.Blue,
-                        CircleShape
-                    )
+    Scaffold(
+        bottomBar = {
+            BottomAppBar(
+                containerColor  = MaterialTheme.colorScheme.secondary
             ) {
-                Icons.Default.DateRange
+                IconButton(
+                    onClick = onNavigateToCreateNota,
+                    modifier = Modifier
+                        .padding(8.dp)
+                        .clip(CircleShape)
+                        .background(Color.Blue)
+                        .weight(1f)
+                ) {
+                    Icon(Icons.Default.Add, contentDescription = null)
+                }
+                IconButton(
+                    onClick = onNavigateToInicio,
+                    modifier = Modifier
+                        .padding(8.dp)
+                        .clip(CircleShape)
+                        .background(Color.Blue)
+                        .weight(1f)
+                ) {
+                    Icon(Icons.Default.Home, contentDescription = null)
+                }
+                IconButton(
+                    onClick = onNavigateToCalendario,
+                    modifier = Modifier
+                        .padding(8.dp)
+                        .clip(CircleShape)
+                        .background(Color.Blue)
+                        .weight(1f)
+                ) {
+                    Icon(Icons.Default.DateRange, contentDescription = null)
+                }
+            }
+        },
+        content = { innerPadding ->
+            Column(
+                modifier = Modifier.padding(innerPadding),
+                verticalArrangement = Arrangement.spacedBy(8.dp)
+            ) {
+                Row {
+                    Text(text = "Busqueda")
+                }
             }
         }
-        Row {
-            Text(text = "Ir a calendario")
-            IconButton(
-                onClick = onNavigateToCalendario ,
-                modifier = Modifier
-                    .background(
-                        Color.Blue,
-                        CircleShape
-                    )
-            ) {
-                Icons.Default.DateRange
-            }
-        }
-        Row {
-            Text(text = "Ir a Busqueda")
-            IconButton(
-                onClick = onNavigateToBusqueda ,
-                modifier = Modifier
-                    .background(
-                        Color.Blue,
-                        CircleShape
-                    )
-            ) {
-                Icons.Default.DateRange
-            }
-        }
-        Row {
-            Text(text = "Ir a CreateNota")
-            IconButton(
-                onClick = onNavigateToCreateNota ,
-                modifier = Modifier
-                    .background(
-                        Color.Blue,
-                        CircleShape
-                    )
-            ) {
-                Icons.Default.DateRange
-            }
-        }
-    }
+    )
 }
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////  CreateNota  ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 @Composable
 fun CreateNota(
@@ -310,63 +295,54 @@ fun CreateNota(
     onNavigateToBusqueda: () -> Unit,
     onNavigateToCreateNota: () -> Unit
 ) {
-    Column {
-        Row {
-            Text(text = "Pagina CreateNota")
-        }
-        Row {
-            Text(text = "Ir a Inicio")
-            IconButton(
-                onClick = onNavigateToInicio ,
-                modifier = Modifier
-                    .background(
-                        Color.Blue,
-                        CircleShape
-                    )
+    Scaffold(
+        bottomBar = {
+            BottomAppBar(
+                containerColor  = MaterialTheme.colorScheme.secondary
             ) {
-                Icons.Default.DateRange
+                IconButton(
+                    onClick = onNavigateToBusqueda,
+                    modifier = Modifier
+                        .padding(8.dp)
+                        .clip(CircleShape)
+                        .background(Color.Blue)
+                        .weight(1f)
+                ) {
+                    Icon(Icons.Default.Search, contentDescription = null)
+                }
+                IconButton(
+                    onClick = onNavigateToInicio,
+                    modifier = Modifier
+                        .padding(8.dp)
+                        .clip(CircleShape)
+                        .background(Color.Blue)
+                        .weight(1f)
+                ) {
+                    Icon(Icons.Default.Home, contentDescription = null)
+                }
+                IconButton(
+                    onClick = onNavigateToCalendario,
+                    modifier = Modifier
+                        .padding(8.dp)
+                        .clip(CircleShape)
+                        .background(Color.Blue)
+                        .weight(1f)
+                ) {
+                    Icon(Icons.Default.DateRange, contentDescription = null)
+                }
+            }
+        },
+        content = { innerPadding ->
+            Column(
+                modifier = Modifier.padding(innerPadding),
+                verticalArrangement = Arrangement.spacedBy(8.dp)
+            ) {
+                Row {
+                    Text(text = "CreateNota")
+                }
             }
         }
-        Row {
-            Text(text = "Ir a calendario")
-            IconButton(
-                onClick = onNavigateToCalendario ,
-                modifier = Modifier
-                    .background(
-                        Color.Blue,
-                        CircleShape
-                    )
-            ) {
-                Icons.Default.DateRange
-            }
-        }
-        Row {
-            Text(text = "Ir a Busqueda")
-            IconButton(
-                onClick = onNavigateToBusqueda ,
-                modifier = Modifier
-                    .background(
-                        Color.Blue,
-                        CircleShape
-                    )
-            ) {
-                Icons.Default.DateRange
-            }
-        }
-        Row {
-            Text(text = "Ir a CreateNota")
-            IconButton(
-                onClick = onNavigateToCreateNota ,
-                modifier = Modifier
-                    .background(
-                        Color.Blue,
-                        CircleShape
-                    )
-            ) {
-                Icons.Default.DateRange
-            }
-        }
-    }
+    )
 }
 
 
